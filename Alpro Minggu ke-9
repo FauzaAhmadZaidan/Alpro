@@ -85,3 +85,43 @@ if crust == 2 :
             TotalHarga += 155_455
             if cheese == True :
                 TotalHarga += 19_091
+    if crust == 4 :
+        if size == 1 :
+            TotalHarga += 57_273
+            if cheese == True :
+                TotalHarga += 13_636
+        if size == 2 :
+                TotalHarga += 123_637
+            if cheese == True :
+                TotalHarga += 16_364
+        if size == 3 :
+            TotalHarga += 164_546
+            if cheese == True :
+                TotalHarga += 19_091  
+    if crust == 5 :
+        if size == 1 :
+            TotalHarga += 55_455
+            if cheese == True :
+                TotalHarga += 13_636
+        if size == 2 :
+                TotalHarga += 120_910
+            if cheese == True :
+                TotalHarga += 16_364
+        if size == 3 :
+            TotalHarga += 160_000
+            if cheese == True :
+                TotalHarga += 19_091 
+    return TotalHarga
+
+
+print(KalkulasiHarga(PilihCrust, PilihSize, EkstraCheese))
+
+print(
+    f"""
+Pilihan pizza anda adalah pizza topping {ToppingPizza[PilihTopping-1]}
+Dengan crust {CrustPizza[PilihCrust-1]}
+Ukuran {SizePizza[PilihSize-1]}
+{'Tambah keju' if EkstraCheese else ''}
+
+Total Harga : Rp.{KalkulasiHarga(PilihCrust, PilihSize, EkstraCheese)}
+""")
