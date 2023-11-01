@@ -1,2 +1,61 @@
-p
-s
+"""
+    Kelas: 2023E
+    Prodi: D4 Manajemen Informatika
+    Kelompok: 1
+
+    Nama Anggota:
+    1. Fauza Ahmad Zaidan - 23091397144
+    2. Ardelia Zahra Farsiana - 23091397159
+    3. Umar Faruq - 23091397157
+"""
+
+print (
+"""
+================================================================
+SELAMAT DATANG DI PIZZA HUT
+================================================================
+
+""")
+
+ToppingPizza = ["Frankfurter","Meat Monsta","Super Supreme","Super Supreme Chicken"]
+CrustPizza = ["Pan", "StuffedCrust Cheese","StuffedCrust Sausage","Cheesy Bites","Crown Crust"]
+SizePizza = ["Personal","Regular","Large"]
+
+
+for i,topping in enumerate(ToppingPizza):
+    print(i+1,topping)
+PilihTopping = int(input("Pilih Topping: "))
+print("Topping yang anda pilih:",ToppingPizza[PilihTopping-1])
+
+for i,crust in enumerate(CrustPizza):
+    print(i+1,crust)
+PilihCrust = int(input("Pilih Crust: "))
+print("Crust yang anda pilih:",CrustPizza[PilihCrust-1])
+
+for i,size in enumerate(SizePizza):
+    print(i+1,size)
+PilihSize = int(input("Pilih Size: "))
+print("Size yang anda pilih:",SizePizza[PilihSize-1])
+
+EkstraCheese = input("Ingin tambah keju? [y/n]: ")
+if EkstraCheese == "y": 
+    EkstraCheese = True
+else: 
+    EkstraCheese = False
+
+
+def KalkulasiHarga(crust,size,cheese):
+    TotalHarga = 0
+    if crust == 1 : 
+        if size == 1 :
+            TotalHarga += 43_637
+            if cheese == True :
+                TotalHarga += 13_636
+        if size == 2 :
+            TotalHarga += 100_910
+            if cheese == True :
+                TotalHarga += 16_364
+        if size == 3 :
+            TotalHarga += 132_728
+            if cheese == True :
+                TotalHarga += 19_091       
