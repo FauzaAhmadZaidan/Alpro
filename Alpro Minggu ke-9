@@ -46,7 +46,7 @@ else:
 
 def KalkulasiHarga(crust,size,cheese):
     TotalHarga = 0
-    if crust == 1 : 
+ if crust == 1 : 
         if size == 1 :
             TotalHarga += 43_637
             if cheese == True :
@@ -59,3 +59,29 @@ def KalkulasiHarga(crust,size,cheese):
             TotalHarga += 132_728
             if cheese == True :
                 TotalHarga += 19_091       
+if crust == 2 :
+        if size == 1 :
+            TotalHarga += 55_455
+            if cheese == True :
+                TotalHarga += 13_636 
+        if size == 2 :
+            TotalHarga += 120_910
+            if cheese == True :
+                TotalHarga += 16_364
+        if size == 3 :
+            TotalHarga += 160_000
+            if cheese == True :
+                TotalHarga += 19_091     
+  if crust == 3 :
+        if size == 1 :
+            TotalHarga += 52_728
+            if cheese == True :
+                TotalHarga += 13_636 
+        if size == 2 :
+            TotalHarga += 117_273
+            if cheese == True :
+                TotalHarga += 16_364
+        if size == 3 :
+            TotalHarga += 155_455
+            if cheese == True :
+                TotalHarga += 19_091
