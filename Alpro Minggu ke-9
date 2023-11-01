@@ -8,7 +8,6 @@
     2. Ardelia Zahra Farsiana - 23091397159
     3. Umar Faruq - 23091397157
 """
-
 print (
 """
 ================================================================
@@ -112,7 +111,6 @@ if crust == 2 :
             if cheese == True :
                 TotalHarga += 19_091 
     return TotalHarga
-
 
 print(KalkulasiHarga(PilihCrust, PilihSize, EkstraCheese))
 
